@@ -9,7 +9,7 @@
               <div class="row">
                 <div class="col-xl">
                   <div class="card">
-                    <video ref="video" src width="600" height="400"></video>
+                    <video ref="video" style="width:1640px;height:405px;width:auto;"></video>
                   </div>
                 </div>
               </div>
@@ -23,13 +23,13 @@
               </div>
               <div class="row" style="display:inline">
                 <div class="col-xl-auto">
-                  <button class="btn btn-primary" :disabled="isStart" @click="onStartBtn" style="width:400px;height:50px;font-size:20px;">开始录制</button>
+                  <button class="btn btn-primary" :disabled="isStart" @click="onStartBtn" style="width:80%;height:50px;font-size:20px;">开始录制</button>
                 </div>
                 <div class="col-xl-auto">
-                  <button class="btn btn-danger" :disabled="!isStart" @click="onEndBtn" style="width:400px;height:50px;font-size:20px;">结束录制</button>
+                  <button class="btn btn-danger" :disabled="!isStart" @click="onEndBtn" style="width:80%;height:50px;font-size:20px;">结束录制</button>
                 </div>
                 <div class="col-xl-auto">
-                  <button class="btn btn-info" :disabled="!isFinish" @click="onDownloadBtn" style="width:400px;height:50px;font-size:20px;">下载</button>
+                  <button class="btn btn-info" :disabled="!isFinish" @click="onDownloadBtn" style="width:80%;height:50px;font-size:20px;">下载</button>
                 </div>
               </div>
             </div>
@@ -107,13 +107,7 @@ export default {
 
 .row {
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.row .col-xl-auto{
-    text-align:center;
-}
-
-.center_text{
-    font-size:25px;
-} 
 </style>
