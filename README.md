@@ -1,16 +1,12 @@
-# RecordingScreenOL 在线录制屏幕
+# 在线录制屏幕
 
-## Preview
+## 网站地址
 
-https://tidusinspira.github.io/RecordingScreenOL/
+https://srcrs.github.io/screen
 
-## Feature
+## 功能
 
-- 只需打开浏览器，不用下载任何软件
-- 可以选择录制的屏幕
-- 录制内容实时显示
-- 可以选择是否录制音频
-
-## Screenshot
-
-![shot.png](shot.png)
++ 只需打开浏览器，不用下载任何软件
++ 可以选择录制的屏幕
++ 录制内容实时显示
++ 可以选择是否录制音频
