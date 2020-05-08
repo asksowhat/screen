@@ -9,15 +9,7 @@
               <div class="row">
                 <div class="col-xl">
                   <div class="card">
-                    <video ref="video" style="width:1640px;height:405px;width:auto;"></video>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xl">
-                  <div class="form-check form-check-inline">
-                    <input type="checkbox" v-model="checked" class="form-check-input" id="audio" :disabled="isStart && !isFinish" />
-                    <label for="audio" class="form-check-label" style="font-size:20px;">是否录制声音</label>
+                    <video ref="video" style="height:270px;width:auto;"></video>
                   </div>
                 </div>
               </div>
@@ -49,7 +41,6 @@ export default {
       mediaRecorder: null,
       data: [],
       stream: null,
-      checked: false,
       isStart: false,
       isFinish: false
     }
@@ -60,7 +51,7 @@ export default {
       this.isFinish = false
       this.stream = await navigator.mediaDevices.getDisplayMedia({
         video: true,
-        audio: this.checked
+        audio: true
       })
       this.mediaRecorder = new MediaRecorder(this.stream, {
         mimeType: 'video/webm'
@@ -102,7 +93,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 30px;
+  margin-top: 5px;
+}
+.col-xl-auto{
+  margin-bottom: 5px;
 }
 
 .row {
