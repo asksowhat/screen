@@ -9,7 +9,7 @@
               <div class="row">
                 <div class="col-xl">
                   <div class="card">
-                    <video ref="video" style="height:270px;width:auto;"></video>
+                    <video ref="video" style="height:270px;width:auto;" muted="muted"></video>
                   </div>
                 </div>
               </div>
